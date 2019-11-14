@@ -1,11 +1,6 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-<div>Hello, User</div>
-<a href="/main">Main page</a>
-</body>
-</html>
+<#import "parts/common.ftl" as c>
+
+<@c.page>
+    <div>Hello, user</div>
+    <a href="/main">Main page</a>
+</@c.page>
